@@ -587,7 +587,7 @@ p {
 .plus__menu{
   display: flex;
   margin: auto;
-  margin-top: 6px;
+  margin-top: 7px;
   justify-content: space-between;
   align-items: center;
   z-index: 1;

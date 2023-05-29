@@ -67,8 +67,7 @@ plusMenu.addEventListener('click',(event)=>{
   const target = event.target;
   const link = target.dataset.link;
   console.log(link);
-  plusItems.forEach((item)=> item == target ? item.classList.add('active'):
-  item.classList.remove('active'))
+  plusItems.forEach((item) => {item == target ? item.classList.add('active'):  item.classList.remove('active')})
   if(link == null) return;
   scrollIntoView(link);
 })
