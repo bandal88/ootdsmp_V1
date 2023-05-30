@@ -225,15 +225,16 @@ p {
   background-color: var(--color-orange);
 }
 .home__menu{
-  width: 100px;
-  height: 30px;
+  width: 200px;
+  height: 50px;
   margin: auto;
-  line-height: 30px;
+  line-height: 50px;
   background-color: var(--color-pink);
   border-radius: 20px;
 }
 .home__menu i{
   color: var(--color-light-white);
+  font-size : var(--font-size-medium);
 }
 .menu__navbar{
   display: none;
@@ -524,6 +525,15 @@ p {
   .navbar__menu.open {
     display: block;
   }
+  
+ .home__menu{
+  width: 100px;
+  height: 30px;
+  margin: auto;
+  line-height: 30px;
+  background-color: var(--color-pink);
+  border-radius: 20px;
+}
 
   .section {
     padding: 16px;
