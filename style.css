@@ -227,12 +227,11 @@ p {
 .home__menu{
   width: 200px;
   height: 50px;
-  margin: auto;
-  line-height: 50px;
   background-color: var(--color-pink);
   border-radius: 20px;
   display:flex;
   justify-content:space-between;
+  align-items:center;
 }
 .home__menu i{
   color: var(--color-light-white);
