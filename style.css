@@ -232,10 +232,11 @@ p {
   display:flex;
   justify-content:space-between;
   align-items:center;
+  line-height : 50px
 }
 .home__menu i{
   color: var(--color-light-white);
-  font-size : var(30px);
+  font-size : 28px;
 }
 .menu__navbar{
   display: none;
