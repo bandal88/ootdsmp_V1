@@ -14,32 +14,26 @@ document.addEventListener('scroll', () => {
 ////홈 메뉴 만들기
 
 
-const home__menu = document.querySelector('.home__menu');
-const home_menu_i = document.querySelectorAll('.home__menu i')
-home__menu.addEventListener('click',(e)=>{
-  const $tab =e.target.classList.contains('fa-circle');
-  if($tab){
-    home_menu_i.forEach((i)=>{
-      i.classList.remove('fa-solid');
-      i.classList.add('fa-regular');
+const home__btn = document.querySelector('.home__btn');
+const home_menu_btn = document.querySelectorAll('.home__btn button')
+
+home__btn.addEventListener('click',(event)=>{
+  const target = event.target;
+  if(target.tagName === 'BUTTON'){
+    home_menu_btn.forEach((btn)=>{
+      btn === target ? btn.classList.add('active') : btn.classList.remove('active');
+    
     })
 
-      e.target.classList.remove('fa-regular');
-      e.target.classList.add('fa-solid');
-      
-
-    const target = e.target.dataset.alt;
-    console.log(target);
+    const tab__target = target.dataset.alt;
     document.querySelectorAll('.home__content').forEach(
       (tab)=> {tab.classList.remove('active')}
     )
-    document.querySelector(`#${target}`).classList.add('active');
-
-  }
-
+    document.querySelector(`#${tab__target}`).classList.add('active');
+    
+    
+  };
 })
-
-//
 
 
 
