@@ -658,6 +658,10 @@ p {
   
 }
 
+.home__btn{
+  display: flex;
+}
+
 }
 
 
